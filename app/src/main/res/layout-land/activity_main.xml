@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/bmi_title"
+            android:textColor="@color/primary_dark_color"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_spacing"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/surface_color"
+                android:orientation="vertical"
+                android:padding="@dimen/panel_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/weight_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/weight_label"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <EditText
+                        android:id="@+id/weight_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/field_spacing"
+                        android:layout_weight="1"
+                        android:autofillHints="none"
+                        android:hint="@string/weight_hint"
+                        android:inputType="numberDecimal"
+                        android:minHeight="@dimen/minimum_touch_height"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/secondary_text_color"
+                        android:textSize="@dimen/input_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_spacing"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/height_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/height_label"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <EditText
+                        android:id="@+id/height_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/field_spacing"
+                        android:layout_weight="1"
+                        android:autofillHints="none"
+                        android:hint="@string/height_hint"
+                        android:inputType="numberDecimal"
+                        android:minHeight="@dimen/minimum_touch_height"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/secondary_text_color"
+                        android:textSize="@dimen/input_text_size" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/calculate_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/section_spacing"
+                    android:backgroundTint="@color/primary_color"
+                    android:minHeight="@dimen/minimum_touch_height"
+                    android:text="@string/calculate"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/column_spacing"
+                android:layout_weight="1"
+                android:background="@color/surface_color"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/panel_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bmi_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/bmi_label"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/bmi_output"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/field_spacing"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/bmi_default"
+                        android:textColor="@color/primary_dark_color"
+                        android:textSize="@dimen/result_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_spacing"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/risk_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/risk_label"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/risk_output"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/field_spacing"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/risk_default"
+                        android:textColor="@color/risk_default"
+                        android:textSize="@dimen/result_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

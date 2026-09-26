@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.BMICalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:statusBarColor">@color/primary_dark_color</item>
+    </style>
+
+    <style name="Theme.BMICalculator" parent="Base.Theme.BMICalculator" />
+</resources>

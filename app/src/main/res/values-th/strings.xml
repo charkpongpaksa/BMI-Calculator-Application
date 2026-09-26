@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">เครื่องคำนวณ BMI</string>
+    <string name="bmi_title">เครื่องคำนวณดัชนีมวลกาย</string>
+    <string name="weight_label">น้ำหนัก (กก.)</string>
+    <string name="height_label">ส่วนสูง (ซม.)</string>
+    <string name="weight_hint">เช่น 65</string>
+    <string name="height_hint">เช่น 168</string>
+    <string name="bmi_label">BMI</string>
+    <string name="risk_label">ระดับภาวะเสี่ยง</string>
+    <string name="calculate">คำนวณ</string>
+    <string name="bmi_default">--</string>
+    <string name="risk_default">--</string>
+    <string name="risk_underweight">น้ำหนักต่ำกว่าเกณฑ์</string>
+    <string name="risk_normal">ปกติ</string>
+    <string name="risk_overweight">น้ำหนักเกิน</string>
+    <string name="risk_obese">อ้วน</string>
+    <string name="empty_input_warning">กรุณากรอกน้ำหนักและส่วนสูงให้ครบ</string>
+    <string name="invalid_input_warning">กรอกตัวเลขที่มากกว่าศูนย์และมีทศนิยมไม่เกิน 2 ตำแหน่ง</string>
+    <string name="font_scale_title">ขนาดตัวอักษรเปลี่ยนแปลง</string>
+    <string name="font_scale_message">ต้องการใช้ขนาดตัวอักษรใหม่ของระบบ หรือคงขนาดปัจจุบันของแอปไว้</string>
+    <string name="use_system_font">ใช้ค่าระบบ</string>
+    <string name="keep_current_font">คงขนาดปัจจุบัน</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="bmi_title">Body Mass Index Calculator</string>
+    <string name="weight_label">Weight (kg)</string>
+    <string name="height_label">Height (cm)</string>
+    <string name="weight_hint">e.g., 65</string>
+    <string name="height_hint">e.g., 168</string>
+    <string name="bmi_label">BMI</string>
+    <string name="risk_label">Risk level</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi_default">--</string>
+    <string name="risk_default">--</string>
+    <string name="risk_underweight">Underweight</string>
+    <string name="risk_normal">Normal</string>
+    <string name="risk_overweight">Overweight</string>
+    <string name="risk_obese">Obese</string>
+    <string name="empty_input_warning">Please enter both weight and height.</string>
+    <string name="invalid_input_warning">Enter positive numbers with no more than 2 decimal places.</string>
+    <string name="font_scale_title">Font size changed</string>
+    <string name="font_scale_message">Do you want to use the new system font size or keep the current app size?</string>
+    <string name="use_system_font">Use system</string>
+    <string name="keep_current_font">Keep current</string>
+</resources>
